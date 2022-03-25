@@ -1,18 +1,20 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './styles/commonStyles.css';
+import { spices } from './utils/gameData';
 import Scoreboard from './components/Scoreboard';
 import Gameboard from './components/Gameboard';
-import { spices } from './utils/gameData';
 import { shuffleArray } from './utils/helperFunctions';
 
 function App() {
   const [currScore, setCurrScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
   const [cardData, setCardData] = useState(spices);
+  console.log('App load');
 
   useEffect(() => {
+    console.log('Shuffle');
     setCardData(shuffleArray(cardData));
   }, []);
 
@@ -20,6 +22,7 @@ function App() {
     console.log(event.target);
     setCurrScore(currScore + 1);
     setHighScore(highScore + 1);
+    setCardData([]);
   }
 
   return (
