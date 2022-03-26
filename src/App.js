@@ -10,19 +10,29 @@ import { shuffleArray } from './utils/helperFunctions';
 function App() {
   const [currScore, setCurrScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
-  const [cardData, setCardData] = useState(spices);
+  const [cardData, setCardData] = useState(shuffleArray(spices));
+  const [clickHistory, setClickHistory] = useState([]);
   console.log('App load');
 
   useEffect(() => {
-    console.log('Shuffle');
-    setCardData(shuffleArray(cardData));
-  }, []);
+    console.log('set high score');
+    setHighScore(Math.max(currScore, highScore));
+  }, [currScore]);
+
+  function resetGame() {
+    setCurrScore(0);
+    setClickHistory([]);
+  }
 
   function handleUserClick(event) {
-    console.log(event.target);
-    setCurrScore(currScore + 1);
-    setHighScore(highScore + 1);
-    setCardData([]);
+    const id = event.target.id;
+    if (clickHistory.includes(id)) {
+      resetGame();
+    } else {
+      setClickHistory([...clickHistory, id]);
+      setCurrScore(currScore + 1);
+    }
+    setCardData(shuffleArray(cardData));
   }
 
   return (

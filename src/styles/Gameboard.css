@@ -1,0 +1,13 @@
+.gameBoard__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 700px;
+    height: 1000px;
+    gap: 10px;
+    background-color: #7f4f24;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px 0px 20px 0px;
+    padding: 10px;
+}

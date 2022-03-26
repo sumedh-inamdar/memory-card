@@ -1,16 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+
 header {
   flex: 0 0 100px;
   display: flex;
+  flex-direction: column;
   width: 100%;
   min-width: 400px;
-  background-color: #153243;
+  background-color: #335c67;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
   color: #eef0eb;
 }
 h1 {
-  margin: 0px;
+  margin: 10px;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
   min-width: max-content;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+h3 {
+  margin: 0px 0px 10px 0px;
+  border: 2px solid white;
+  background: linear-gradient(35deg, rgba(255, 196, 0, 0.849), rgba(167, 43, 43, 0.925) 70.71%);
+  padding: 5px 15px;
+  border-radius: 15px 180px / 100px;
+  font-family:'Montez', cursive;
 }
