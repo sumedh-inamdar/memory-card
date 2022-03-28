@@ -2,17 +2,16 @@
     display: flex;
     background-color: #e09f3e;
     margin: 20px;
-    border-radius: 20px;
+    border-radius: 4px;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
 }
 .scoreboard__Container > * {
     font-weight: 700;
-    font-size: 20px;
-    background-color: #9e2a2b;
-    padding: 5px 10px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 4px 2px black;
+    font-size: 24px;
+}
+.textLight {
+    font-weight: 300;
 }
 #currentScore {
     margin: 10px 20px 10px 40px;

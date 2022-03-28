@@ -6,8 +6,12 @@ export default function Scoreboard(props) {
   console.log('Scoreboard load');
   return (
     <div className="scoreboard__Container">
-      <div id="currentScore">Current Score: {props.currScore}</div>
-      <div id="highScore">High Score: {props.highScore}</div>
+      <div id="currentScore">
+        <span className="textLight">Current Score:</span> {props.currScore}
+      </div>
+      <div id="highScore">
+        <span className="textLight">High Score:</span> {props.highScore}
+      </div>
     </div>
   );
 }

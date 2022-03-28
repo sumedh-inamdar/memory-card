@@ -1,17 +1,19 @@
 footer {
     margin-top: auto;
-    font-family: inherit;
-    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
     font-size: 1.2rem;
     text-align: center;
     width: 100%;
     min-width: 300px;
     height: 32px;
-    background-color: #284b63;
+    background-color: #e09f3e;
     color: #f4f9e9;
 }
 footer input {
-    display: inline;
     height: 20px;
     transition: transform 1s;
 }

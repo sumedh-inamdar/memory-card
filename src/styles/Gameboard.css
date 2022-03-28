@@ -2,12 +2,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    width: 700px;
-    height: 1000px;
+    /* width: 700px;
+    height: 1000px; */
     gap: 10px;
-    background-color: #7f4f24;
+    background-color: #e09f3e;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0px 0px 20px 0px;
     padding: 10px;
+    border-radius: 4px;
 }

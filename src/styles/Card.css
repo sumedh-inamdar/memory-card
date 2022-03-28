@@ -1,6 +1,31 @@
 .card__container {
-    background-color: #540b0e;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 4px;
+}
+.cardImage {
+    border-radius: 4px;
+}
+.cardHover {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    /* opacity: 0.3; */
+}
+.cardHover__text {
+    color: white;
+    margin: auto;
     text-align: center;
-    font-weight: 600;
-    box-shadow: inset 0px 0px 2px 2px black;
+    font-size: 48px;
+    font-weight: 200;
+    /* opacity: 1.0; */
+}
+.noDisplay {
+    visibility: hidden;
 }
