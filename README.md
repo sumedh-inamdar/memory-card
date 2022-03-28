@@ -12,10 +12,9 @@ Memory card game built using React Hooks. User must select unique cards each tur
 - ReactJS Hooks:
   - useState
   - useEffect
+- Embedding images in React App
 
 ## To do list
-
-- [ ] Setup ESlint / Prettier / Unicorn
 
 ## Bugs to fix
 
