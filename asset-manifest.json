@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.605aac84.css",
+    "main.js": "/memory-card/static/js/main.7b6ab41e.js",
+    "static/media/paprika.jpg": "/memory-card/static/media/paprika.014c3d38e3bef52bad8c.jpg",
+    "static/media/dried-basil.jpg": "/memory-card/static/media/dried-basil.770afcc038275a6c9d73.jpg",
+    "static/media/star-anise.jpg": "/memory-card/static/media/star-anise.9195de7c4fdc6505f448.jpg",
+    "static/media/coriander.jpg": "/memory-card/static/media/coriander.9dfe10174edf24ac7588.jpg",
+    "static/media/turmeric.jpg": "/memory-card/static/media/turmeric.b2f4037bec743f414658.jpg",
+    "static/media/cumin-seeds.jpg": "/memory-card/static/media/cumin-seeds.015aae3974e4d993a046.jpg",
+    "static/media/fenugreek.jpg": "/memory-card/static/media/fenugreek.af10fd779abafbfc4ef9.jpg",
+    "static/media/black-pepper.jpg": "/memory-card/static/media/black-pepper.6475bac92968935ca3e3.jpg",
+    "static/media/cinnamon.jpg": "/memory-card/static/media/cinnamon.cc0b1a9549ecbede34f7.jpg",
+    "static/media/dried-red-chilies.jpg": "/memory-card/static/media/dried-red-chilies.a3b5dbee789bbaa84186.jpg",
+    "static/media/black-cardamom.jpg": "/memory-card/static/media/black-cardamom.f9e24da9555cd26425ef.jpg",
+    "static/media/green-cardamom.jpg": "/memory-card/static/media/green-cardamom.81c29165904b9208ab53.jpg",
+    "static/media/Octocat.png": "/memory-card/static/media/Octocat.983e7d4b457c979a95aa.png",
+    "index.html": "/memory-card/index.html",
+    "main.605aac84.css.map": "/memory-card/static/css/main.605aac84.css.map",
+    "main.7b6ab41e.js.map": "/memory-card/static/js/main.7b6ab41e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.605aac84.css",
+    "static/js/main.7b6ab41e.js"
+  ]
+}
