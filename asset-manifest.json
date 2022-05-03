@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/memory-card/static/css/main.605aac84.css",
-    "main.js": "/memory-card/static/js/main.7b6ab41e.js",
+    "main.css": "/memory-card/static/css/main.da489a3c.css",
+    "main.js": "/memory-card/static/js/main.1777d73b.js",
     "static/media/paprika.jpg": "/memory-card/static/media/paprika.014c3d38e3bef52bad8c.jpg",
     "static/media/dried-basil.jpg": "/memory-card/static/media/dried-basil.770afcc038275a6c9d73.jpg",
     "static/media/star-anise.jpg": "/memory-card/static/media/star-anise.9195de7c4fdc6505f448.jpg",
@@ -16,11 +16,11 @@
     "static/media/green-cardamom.jpg": "/memory-card/static/media/green-cardamom.81c29165904b9208ab53.jpg",
     "static/media/Octocat.png": "/memory-card/static/media/Octocat.983e7d4b457c979a95aa.png",
     "index.html": "/memory-card/index.html",
-    "main.605aac84.css.map": "/memory-card/static/css/main.605aac84.css.map",
-    "main.7b6ab41e.js.map": "/memory-card/static/js/main.7b6ab41e.js.map"
+    "main.da489a3c.css.map": "/memory-card/static/css/main.da489a3c.css.map",
+    "main.1777d73b.js.map": "/memory-card/static/js/main.1777d73b.js.map"
   },
   "entrypoints": [
-    "static/css/main.605aac84.css",
-    "static/js/main.7b6ab41e.js"
+    "static/css/main.da489a3c.css",
+    "static/js/main.1777d73b.js"
   ]
 }
