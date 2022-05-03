@@ -1,4 +1,6 @@
-export function shuffleArray(array) {
+import { useState } from 'react';
+
+function shuffleArray(array) {
   let arrayCopy = [...array];
   for (let i = arrayCopy.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -7,4 +9,14 @@ export function shuffleArray(array) {
     arrayCopy[j] = temp;
   }
   return arrayCopy;
+}
+
+export function useCardData(array) {
+  const [cardData, setCardData] = useState(shuffleArray(array));
+
+  function shuffleCards() {
+    setCardData(shuffleArray(cardData));
+  }
+
+  return [cardData, shuffleCards];
 }

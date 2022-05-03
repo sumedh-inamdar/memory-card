@@ -1,11 +1,11 @@
 .card__container {
     position: relative;
-    width: 250px;
-    height: 250px;
     border-radius: 4px;
 }
 .cardImage {
     border-radius: 4px;
+    width: 100%;
+    height: 100%;
 }
 .cardHover {
     cursor: pointer;
@@ -16,15 +16,23 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 4px;
-    /* opacity: 0.3; */
+    opacity: 0;
+}
+.cardHover:hover {
+    opacity: 1;
 }
 .cardHover__text {
     color: white;
     margin: auto;
+    width: 100%;
     text-align: center;
     font-size: 48px;
     font-weight: 200;
-    /* opacity: 1.0; */
+}
+@media (max-width:768px) {
+    .cardHover__text {
+        font-size: 24px;
+    }
 }
 .noDisplay {
     visibility: hidden;

@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import '../styles/Gameboard.css';
 
 export default function Gameboard({ cardData, handleUserClick }) {
-  console.log('Gameboard load');
   return (
     <div className="gameBoard__container">
       {cardData.map((card) => (

@@ -1,9 +1,8 @@
 .gameBoard__container {
+    flex: 1 1 0%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    /* width: 700px;
-    height: 1000px; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
     background-color: #e09f3e;
     color: white;
@@ -11,4 +10,10 @@
     margin: 0px 0px 20px 0px;
     padding: 10px;
     border-radius: 4px;
+}
+@media (max-width: 768px) {
+    .gameBoard__container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
 }

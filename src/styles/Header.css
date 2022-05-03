@@ -6,24 +6,18 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-width: 400px;
   background-color: #e09f3e;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
   color: #eef0eb;
 }
-h1 {
-  margin: 10px;
-  min-width: max-content;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-}
 h3 {
-  margin: 10px 0px;
+  margin: auto;
   border: 2px solid white;
   background: linear-gradient(35deg, rgba(255, 196, 0, 0.849), rgba(167, 43, 43, 0.925) 70.71%);
-  padding: 5px 285px;
+  width: 95%;
+  text-align: center;
   border-radius: 15px 180px / 100px;
   font-family:'Montez', cursive;
   font-size: 68px;

@@ -1,7 +1,7 @@
 .scoreboard__Container {
     display: flex;
     background-color: #e09f3e;
-    margin: 20px;
+    margin: 10px;
     border-radius: 4px;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
@@ -9,6 +9,12 @@
 .scoreboard__Container > * {
     font-weight: 700;
     font-size: 24px;
+}
+@media (max-width: 768px) {
+    .scoreboard__Container > * {
+        font-weight: 700;
+        font-size: 18px;
+    }
 }
 .textLight {
     font-weight: 300;

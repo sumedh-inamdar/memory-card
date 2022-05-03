@@ -5,31 +5,25 @@ import './styles/commonStyles.css';
 import { spices } from './utils/gameData';
 import Scoreboard from './components/Scoreboard';
 import Gameboard from './components/Gameboard';
-import { shuffleArray } from './utils/helperFunctions';
+import { useCardData } from './utils/helperFunctions';
+import Modal from './components/Modal';
 
 function App() {
   const [currScore, setCurrScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
-  const [cardData, setCardData] = useState(shuffleArray(spices));
+  const [cardData, shuffleCards] = useCardData(spices);
   const [clickHistory, setClickHistory] = useState([]);
-  const modal = document.querySelector('#endModal');
-  console.log('App load');
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    console.log('set high score');
     setHighScore(Math.max(currScore, highScore));
-    if (currScore === 12) {
-      modal.style.display = 'flex';
-    }
+    if (currScore === 12) setShowModal(true);
   }, [currScore]);
 
   function resetGame() {
+    setShowModal(false);
     setCurrScore(0);
     setClickHistory([]);
-  }
-  function restartGame() {
-    resetGame();
-    modal.style.display = 'none';
   }
 
   function handleUserClick(event) {
@@ -40,30 +34,23 @@ function App() {
       setClickHistory([...clickHistory, id]);
       setCurrScore(currScore + 1);
     }
-    setCardData(shuffleArray(cardData));
+    shuffleCards();
   }
-
-  window.addEventListener('click', function (event) {
-    if (event.target == modal) {
-      modal.style.display = 'none';
-    }
-  });
 
   return (
     <div id="app">
-      <div id="endModal" className="modal">
-        <div className="modal-content">
-          <p>Great Job! You got all of them 👏</p>
-          <button onClick={restartGame}>Play Again?</button>
-        </div>
-      </div>
+      {showModal && <Modal resetGame={resetGame} />}
       <Header />
-      <div className="instructions">
-        <span className="bold">Instructions:</span> Try clicking on all
-        SpiceCards only once!
-      </div>
-      <Scoreboard currScore={currScore} highScore={highScore} />
-      <Gameboard cardData={cardData} handleUserClick={handleUserClick} />
+      <main>
+        <div className="flex-container">
+          <div className="instructions">
+            <span className="bold">Instructions:</span> Try clicking on all
+            SpiceCards only once!
+          </div>
+          <Scoreboard currScore={currScore} highScore={highScore} />
+        </div>
+        <Gameboard cardData={cardData} handleUserClick={handleUserClick} />
+      </main>
       <Footer />
     </div>
   );
