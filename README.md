@@ -12,6 +12,7 @@ Memory card game built using React Hooks. User must select unique cards each tur
 - ReactJS Hooks:
   - useState
   - useEffect
+  - create custom hooks
 - Embedding images in React App
 
 ## To do list
